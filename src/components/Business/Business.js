@@ -6,13 +6,13 @@ class Business extends React.Component {
         return(
             <div className="Business">
                 <div className="image-container">
-                    <a href={this.props.business.url} target="_blank">
+                    <a href={this.props.business.url} target="_blank" rel="noopener noreferrer">
                         <img src={this.props.business.imageSrc} alt=''/>
                     </a>
                 </div>
                 <h2>{this.props.business.name}</h2>
                 <div className="Business-information">
-                    <a href={`https://www.google.com/maps/search/?api=1&query=${this.props.business.address} ${this.props.business.city} ${this.props.business.state} ${this.props.business.zipCode}`} className="Business-address" target="_blank">
+                    <a href={`https://www.google.com/maps/search/?api=1&query=${this.props.business.address} ${this.props.business.city} ${this.props.business.state} ${this.props.business.zipCode}`} className="Business-address" target="_blank" rel="noopener noreferrer">
                         <p>{this.props.business.address}</p>
                         <p>{this.props.business.city}</p>
                         <p>{this.props.business.state} {this.props.business.zipCode}</p>
